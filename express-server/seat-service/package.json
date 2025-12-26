@@ -1,0 +1,37 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "Seat management service for handling seat availability, selection, and real-time locking in the ticket booking application",
+  "keywords": [
+    "seats",
+    "seat-management",
+    "seat-selection",
+    "seat-locking",
+    "availability",
+    "real-time",
+    "redis",
+    "express",
+    "typescript",
+    "nodejs",
+    "microservices",
+    "ticket-booking",
+    "seat-service",
+    "inventory",
+    "seat-layout"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}

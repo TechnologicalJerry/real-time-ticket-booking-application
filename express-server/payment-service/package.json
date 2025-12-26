@@ -1,0 +1,38 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "Payment processing service for handling transactions, refunds, and payment gateway integration in the real-time ticket booking application",
+  "keywords": [
+    "payment",
+    "payment-gateway",
+    "transactions",
+    "refunds",
+    "stripe",
+    "paypal",
+    "express",
+    "typescript",
+    "nodejs",
+    "microservices",
+    "checkout",
+    "payment-processing",
+    "ticket-booking",
+    "real-time",
+    "payment-service",
+    "billing"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}

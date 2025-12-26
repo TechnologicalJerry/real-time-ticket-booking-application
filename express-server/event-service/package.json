@@ -1,0 +1,38 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "Event management service for creating and managing events, shows, and venues in the real-time ticket booking application.",
+  "keywords": [
+    "events",
+    "event-management",
+    "shows",
+    "venues",
+    "mysql",
+    "express",
+    "typescript",
+    "nodejs",
+    "microservices",
+    "scheduling",
+    "ticket-booking",
+    "real-time",
+    "event-service",
+    "concerts",
+    "movies",
+    "theater"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}

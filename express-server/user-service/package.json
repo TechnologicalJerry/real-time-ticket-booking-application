@@ -1,0 +1,37 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "User profile management service for handling user data, preferences, and booking history in the real-time ticket booking application",
+  "keywords": [
+    "user-management",
+    "user-profile",
+    "user-data",
+    "profile",
+    "preferences",
+    "booking-history",
+    "express",
+    "typescript",
+    "nodejs",
+    "microservices",
+    "ticket-booking",
+    "real-time",
+    "user-service",
+    "account-management",
+    "personal-info"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}

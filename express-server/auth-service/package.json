@@ -1,0 +1,38 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "Authentication and authorization service for user management in the real-time ticket booking application.",
+  "keywords": [
+    "authentication",
+    "authorization",
+    "jwt",
+    "user-management",
+    "mongodb",
+    "express",
+    "typescript",
+    "nodejs",
+    "microservices",
+    "oauth",
+    "security",
+    "token",
+    "ticket-booking",
+    "auth-service",
+    "login",
+    "signup"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}

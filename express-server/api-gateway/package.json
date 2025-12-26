@@ -1,0 +1,36 @@
+{
+  "name": "real-time-ticket-booking-application",
+  "version": "1.0.0",
+  "description": "API Gateway service for routing and managing requests to microservices in the real-time ticket booking application.",
+  "keywords": [
+    "api-gateway",
+    "microservices",
+    "express",
+    "typescript",
+    "nodejs",
+    "routing",
+    "proxy",
+    "middleware",
+    "authentication",
+    "rate-limiting",
+    "ticket-booking",
+    "real-time",
+    "gateway",
+    "rest-api"
+  ],
+  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
+  "bugs": {
+    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
+  },
+  "license": "MIT",
+  "author": "technojerry",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "test": "jest"
+  }
+}
