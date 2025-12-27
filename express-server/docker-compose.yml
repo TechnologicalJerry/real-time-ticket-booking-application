@@ -1,0 +1,109 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: ticket-booking-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: auth-service
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - ticket-booking-network
+
+  postgresql-user:
+    image: postgres:16
+    container_name: ticket-booking-postgres-user
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: user_service
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_user_data:/var/lib/postgresql/data
+    networks:
+      - ticket-booking-network
+
+  postgresql-seat:
+    image: postgres:16
+    container_name: ticket-booking-postgres-seat
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: seat_service
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_seat_data:/var/lib/postgresql/data
+    networks:
+      - ticket-booking-network
+
+  postgresql-booking:
+    image: postgres:16
+    container_name: ticket-booking-postgres-booking
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: booking_service
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_booking_data:/var/lib/postgresql/data
+    networks:
+      - ticket-booking-network
+
+  postgresql-payment:
+    image: postgres:16
+    container_name: ticket-booking-postgres-payment
+    ports:
+      - "5435:5432"
+    environment:
+      POSTGRES_DB: payment_service
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_payment_data:/var/lib/postgresql/data
+    networks:
+      - ticket-booking-network
+
+  mysql:
+    image: mysql:8.0
+    container_name: ticket-booking-mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: event_service
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - ticket-booking-network
+
+  redis:
+    image: redis:7.2
+    container_name: ticket-booking-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - ticket-booking-network
+
+volumes:
+  mongodb_data:
+  postgres_user_data:
+  postgres_seat_data:
+  postgres_booking_data:
+  postgres_payment_data:
+  mysql_data:
+  redis_data:
+
+networks:
+  ticket-booking-network:
+    driver: bridge
+
