@@ -1,38 +1,30 @@
 {
-  "name": "real-time-ticket-booking-application",
+  "name": "event-service",
   "version": "1.0.0",
-  "description": "Event management service for creating and managing events, shows, and venues in the real-time ticket booking application.",
-  "keywords": [
-    "events",
-    "event-management",
-    "shows",
-    "venues",
-    "mysql",
-    "express",
-    "typescript",
-    "nodejs",
-    "microservices",
-    "scheduling",
-    "ticket-booking",
-    "real-time",
-    "event-service",
-    "concerts",
-    "movies",
-    "theater"
-  ],
-  "homepage": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application#readme",
-  "bugs": {
-    "url": "https://github.com/TechnologicalJerry/real-time-ticket-booking-application/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TechnologicalJerry/real-time-ticket-booking-application.git"
-  },
-  "license": "MIT",
-  "author": "technojerry",
-  "type": "commonjs",
-  "main": "server.ts",
+  "description": "Event management service",
+  "main": "dist/server.js",
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.3.1",
+    "mysql2": "^3.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "ts-node-dev": "^2.0.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
   }
 }
